@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"hal_gpio\startup_stm32f103xb.o"
+"hal_gpio\main.o"
+"hal_gpio\stm32f1xx_it.o"
+"hal_gpio\stm32f1xx_hal_msp.o"
+"hal_gpio\stm32f1xx_hal_gpio_ex.o"
+"hal_gpio\stm32f1xx_hal_tim.o"
+"hal_gpio\stm32f1xx_hal_tim_ex.o"
+"hal_gpio\stm32f1xx_hal.o"
+"hal_gpio\stm32f1xx_hal_rcc.o"
+"hal_gpio\stm32f1xx_hal_rcc_ex.o"
+"hal_gpio\stm32f1xx_hal_gpio.o"
+"hal_gpio\stm32f1xx_hal_dma.o"
+"hal_gpio\stm32f1xx_hal_cortex.o"
+"hal_gpio\stm32f1xx_hal_pwr.o"
+"hal_gpio\stm32f1xx_hal_flash.o"
+"hal_gpio\stm32f1xx_hal_flash_ex.o"
+"hal_gpio\stm32f1xx_hal_exti.o"
+"hal_gpio\system_stm32f1xx.o"
+--strict --scatter "HAL_GPIO\HAL_GPIO.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HAL_GPIO.map" -o HAL_GPIO\HAL_GPIO.axf
